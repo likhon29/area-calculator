@@ -1,0 +1,90 @@
+/* Header contents styles */
+
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    background: rgba(16, 144, 216, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+}
+.blog{
+    display: flex;
+    margin-top: 15px;
+}
+
+/* Cards styles */
+.cards-container{
+    margin: 30px;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+.card{
+    width: 340px;
+    
+}
+.card button{
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.ellipsis-p{
+    display: flex;
+    gap: 2px;
+    justify-content: center;
+}
+
+
+/* Calculation area */
+
+.cards-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.calculation-area{
+    width: 340px;
+    height: 340px;
+    
+}
+.calculation-header{
+    text-decoration: underline;
+    text-align: center;
+}
+
+
+/* Responsive Styles */
+
+/* Responsive for small device */
+@media screen and (max-width: 576px) {
+    .cards-container{
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+    .cards{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+/* Responsive for Medium Devices */
+@media screen and (min-width:577px) and (max-width: 992px) {
+    .cards-container{
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        /* margin: 30px; */
+    }
+    .cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .card{
+        width: 320px;
+        
+    }
+    .rhombus-img{
+        width: 45%;
+    }
+}
